@@ -1,0 +1,15 @@
+; Teal & Amber — NUXRAD theme bundle
+Product: BV
+Units: m/s
+Scale: 1
+Offset: 0
+
+Color4: -64 180 255 255 255
+Color4: -40 30 205 220 255
+Color4: -20 0 125 155 255
+Color4: -5 70 100 115 255
+Color4: 0 170 175 180 255
+Color4: 5 125 100 65 255
+Color4: 20 220 145 30 255
+Color4: 40 255 195 65 255
+Color4: 64 255 245 180 255

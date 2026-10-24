@@ -1,0 +1,15 @@
+; Classic Radar — NUXRAD theme bundle
+Product: BV
+Units: m/s
+Scale: 1
+Offset: 0
+
+Color4: -64 0 255 80 255
+Color4: -40 0 160 40 255
+Color4: -20 0 100 60 255
+Color4: -5 120 210 170 255
+Color4: 0 200 200 200 255
+Color4: 5 245 170 120 255
+Color4: 20 200 55 0 255
+Color4: 40 170 0 0 255
+Color4: 64 255 50 40 255

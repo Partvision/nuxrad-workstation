@@ -1,0 +1,20 @@
+# Local launcher state and diagnostics
+status.json
+launcher.log
+*.log
+
+# Local development and secrets
+node_modules/
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+
+# Original app files, recovered bundles, and investigation scratch
+*.exe
+*.dll
+*.pdb
+work/
+extracted/
+verification*.json

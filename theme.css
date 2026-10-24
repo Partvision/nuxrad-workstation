@@ -1,0 +1,332 @@
+/* NUXRAD Pro UI — reversible presentation layer.
+   Every rule is scoped to the opt-in root attribute. Scientific map layers,
+   canvas contents, radar color palettes, and product data are left to NUXRAD. */
+html[data-nuxrad-pro="off"] .nxpro-brandbar {position:absolute;left:50%;top:8px;transform:translateX(-50%);display:flex;align-items:center;gap:10px;padding:5px 10px;background:#17283b;color:#b9d9ec;border:1px solid #3a5c76;border-radius:7px;font:11px "Segoe UI",sans-serif;z-index:60;cursor:pointer;}
+html[data-nuxrad-pro="off"] .nxpro-switch {font-size:9px;color:#7cbad7;}
+html[data-nuxrad-pro="on"] {
+  --nxpro-bg: #0b111a;
+  --nxpro-panel: #121c29;
+  --nxpro-raised: #1a2737;
+  --nxpro-line: #2b3a4d;
+  --nxpro-accent: #64d8ee;
+  --ui-color-neutral-50: #f2f7fc !important;
+  --ui-color-neutral-100: #e2eaf3 !important;
+  --ui-color-neutral-200: #d3dfec !important;
+  --ui-color-neutral-300: #b9cadc !important;
+  --ui-color-neutral-400: #97adc3 !important;
+  --ui-color-neutral-500: #7a91a8 !important;
+  --ui-color-neutral-600: #536b82 !important;
+  --ui-color-neutral-700: #314459 !important;
+  --ui-color-neutral-800: #1a293b !important;
+  --ui-color-neutral-900: #101a27 !important;
+  --ui-color-neutral-950: #080f18 !important;
+  --ui-bg: #121c29 !important;
+  --ui-bg-muted: #0e1723 !important;
+  --ui-bg-elevated: #1a2737 !important;
+  --ui-bg-accented: #26394d !important;
+  --ui-bg-inverted: #e8f1fa !important;
+  --ui-border: #2b3a4d !important;
+  --ui-border-muted: #223246 !important;
+  --ui-border-accented: #476078 !important;
+  --ui-text: #dce7f3 !important;
+  --ui-text-highlighted: #f3f8ff !important;
+  --ui-text-muted: #a3b6cc !important;
+  --ui-text-toned: #b8c9dc !important;
+  --ui-text-dimmed: #8da4bd !important;
+  --ui-text-inverted: #08151c !important;
+  --ui-primary: #64d8ee !important;
+  --ui-color-primary-300: #a3edfa !important;
+  --ui-color-primary-400: #7ae2f5 !important;
+  --ui-color-primary-500: #46c7e3 !important;
+  --ui-color-primary-600: #1a9bbf !important;
+  --ui-color-primary-700: #147998 !important;
+  --ui-header-height: 64px !important;
+  --ui-radius: .5rem !important;
+  --radius-control: .625rem !important;
+  --font-sans: "Segoe UI Variable Text", "Segoe UI", sans-serif !important;
+  --style-tint: 0% !important;
+  --style-texture: none !important;
+  color-scheme: dark;
+  font-family: var(--font-sans);
+  font-size: 14px !important;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+html[data-nuxrad-pro="on"] body,
+html[data-nuxrad-pro="on"] #__nuxt {
+  font-family: var(--font-sans) !important;
+  color: var(--ui-text);
+  background: var(--nxpro-bg);
+}
+
+html[data-nuxrad-pro="on"] [data-app-navbar],
+html[data-nuxrad-pro="on"] .nxpro-navbar {
+  background: linear-gradient(105deg, #182537, #111c2b 65%, #142536) !important;
+  border-bottom: 1px solid #355068 !important;
+  box-shadow: 0 3px 18px #0005;
+}
+
+html[data-nuxrad-pro="on"] [data-app-navbar] [data-slot="root"] {
+  min-height: 64px;
+}
+
+html[data-nuxrad-pro="on"] [data-app-navbar] button {
+  min-height: 34px;
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: .01em;
+}
+
+html[data-nuxrad-pro="on"] .nxpro-brandbar {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 15px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #b4c9df;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .07em;
+  min-height: 32px;
+  padding: 4px 12px;
+  background: #11283b;
+  border: 1px solid #31556e;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+html[data-nuxrad-pro="on"] .nxpro-mark { width: 7px; height: 7px; border: 1px solid #84e7fa; border-radius: 50%; box-shadow: 0 0 0 4px #63d4eb16; }
+html[data-nuxrad-pro="on"] .nxpro-switch { color: #6bd7eb; font-size: 9px; letter-spacing: .04em; padding-left: 10px; border-left: 1px solid #31516b; }
+@media (max-width: 1150px) { html[data-nuxrad-pro="on"] .nxpro-brandbar { display: none; } }
+
+html[data-nuxrad-pro="on"] .nxpro-brandbar button {
+  min-height: 28px;
+  padding: 4px 10px;
+  color: #9ae8f6;
+  background: #163447;
+  border: 1px solid #386277;
+  border-radius: 7px;
+  font-size: 11px;
+  letter-spacing: .02em;
+  cursor: pointer;
+}
+
+html[data-nuxrad-pro="on"] .nxpro-main {
+  background-color: var(--nxpro-bg) !important;
+}
+
+html[data-nuxrad-pro="on"] .nxpro-rail {
+  width: 164px !important;
+  min-width: 164px !important;
+  max-width: 164px !important;
+  flex-shrink: 0 !important;
+  padding: 22px 12px 12px !important;
+  gap: 5px !important;
+  background: linear-gradient(180deg, #162131, #101925) !important;
+  border-right: 1px solid #304357 !important;
+  box-shadow: 3px 0 16px #0002;
+  scrollbar-width: thin;
+}
+
+html[data-nuxrad-pro="on"] .nxpro-rail button {
+  width: 140px !important;
+  min-width: 140px !important;
+  min-height: 46px !important;
+  flex-direction: row !important;
+  justify-content: flex-start !important;
+  gap: 12px !important;
+  margin-block: 0;
+  padding: 10px 12px !important;
+  border: 1px solid transparent;
+  border-radius: 9px !important;
+  color: #afc2d7;
+  font-family: var(--font-sans) !important;
+  font-size: 12px !important;
+  line-height: 1.25 !important;
+  font-weight: 600;
+  transition: background-color 120ms ease, border-color 120ms ease;
+}
+
+html[data-nuxrad-pro="on"] .nxpro-rail::before {content:"WORKSPACE";align-self:flex-start;color:#6f88a3;font-size:9px;letter-spacing:.16em;font-weight:650;padding:0 12px 12px;}
+html[data-nuxrad-pro="on"] .nxpro-right-rail::before {content:"DATA";color:#6f88a3;font-size:9px;letter-spacing:.16em;font-weight:650;padding-bottom:8px;}
+
+html[data-nuxrad-pro="on"] .nxpro-rail button [class*="text-"] {
+  font-size: 12px !important;
+  line-height: 1.25 !important;
+}
+
+html[data-nuxrad-pro="on"] #dashboard-sidebar-toolbox[data-collapsed="true"] { width:164px !important; min-width:164px !important; }
+html[data-nuxrad-pro="on"] #dashboard-sidebar-panels[data-collapsed="true"] { width:76px !important; min-width:76px !important; }
+html[data-nuxrad-pro="on"] .nxpro-right-rail { width:76px !important; min-width:76px !important; padding:16px 6px !important; gap:7px !important; background:#101b29; border-left:1px solid #2b4056; }
+html[data-nuxrad-pro="on"] .nxpro-right-rail button { min-height:52px !important; border:1px solid transparent; border-radius:8px !important; font-size:11px !important; }
+html[data-nuxrad-pro="on"] .nxpro-right-rail button:hover { background:#20354a !important; border-color:#38536b; }
+html[data-nuxrad-pro="on"] .nxpro-right-rail button [class*="text-"] {font-size:10px !important;}
+html[data-nuxrad-pro="on"] [data-app-navbar] [data-slot="left"] {gap:16px !important;}
+html[data-nuxrad-pro="on"] [data-app-navbar] [aria-label^="Radar site"] {background:#1c2e42; border:1px solid #37516a; padding:6px 12px; border-radius:8px;}
+html[data-nuxrad-pro="on"] #dashboard-panel-home { padding:10px 10px 8px !important; }
+html[data-nuxrad-pro="on"] #dashboard-panel-home > [data-slot="body"] {border-radius:10px !important; box-shadow:0 0 0 1px #304358;}
+@media (max-width: 1000px) {
+ html[data-nuxrad-pro="on"] #dashboard-sidebar-toolbox[data-collapsed="true"],html[data-nuxrad-pro="on"] .nxpro-rail {width:76px !important;min-width:76px !important;max-width:76px !important;}
+ html[data-nuxrad-pro="on"] .nxpro-rail {padding:12px 6px !important;}
+ html[data-nuxrad-pro="on"] .nxpro-rail button {width:64px !important;min-width:64px !important;flex-direction:column !important;gap:4px !important;justify-content:center !important;}
+ html[data-nuxrad-pro="on"] .nxpro-rail button [class*="text-"] {font-size:10px !important;}
+}
+
+html[data-nuxrad-pro="on"] .nxpro-rail button:hover {
+  color: #edf6ff;
+  background-color: #24374a !important;
+  border-color: #41576d;
+}
+
+html[data-nuxrad-pro="on"] .nxpro-rail button[aria-expanded="true"],
+html[data-nuxrad-pro="on"] .nxpro-rail button[aria-pressed="true"],
+html[data-nuxrad-pro="on"] .nxpro-rail button[data-state="active"],
+html[data-nuxrad-pro="on"] .nxpro-rail [data-panel-open="true"] > button {
+  color: #b9f3ff !important;
+  background: #173b50 !important;
+  border-color: #427d96 !important;
+  box-shadow: inset 3px 0 #64d8ee;
+}
+
+html[data-nuxrad-pro="on"] [data-panel-body] {
+  background-color: var(--nxpro-panel);
+}
+
+html[data-nuxrad-pro="on"] [data-tour-panel] > [data-slot="header"],
+html[data-nuxrad-pro="on"] [data-sidebar-panel] > [data-slot="header"] {
+  background: #182638;
+  border-bottom-color: #34495f;
+}
+
+html[data-nuxrad-pro="on"] [data-slot="title"] {
+  font-family: var(--font-sans) !important;
+  font-weight: 650 !important;
+  letter-spacing: .015em;
+}
+
+html[data-nuxrad-pro="on"] .nxpro-pane {
+  border-color: #33495f !important;
+}
+
+html[data-nuxrad-pro="on"] .nxpro-pane-label {
+  min-height: 32px;
+  padding: 5px 10px !important;
+  color: #ecf7ff !important;
+  background: #132234ed !important;
+  border: 1px solid #426079 !important;
+  border-radius: 8px !important;
+  box-shadow: 0 3px 12px #0005;
+  font-size: 12px !important;
+  font-weight: 650 !important;
+  letter-spacing: .01em;
+  backdrop-filter: blur(10px);
+}
+
+html[data-nuxrad-pro="on"] .nxpro-bottom {
+  min-height: 44px;
+  background: linear-gradient(180deg, #192638, #121e2d) !important;
+  border-top: 1px solid #385068 !important;
+  box-shadow: 0 -3px 14px #0003;
+}
+
+html[data-nuxrad-pro="on"] .nxpro-bottom button {
+  min-height: 30px;
+  border-radius: 7px !important;
+  font-size: 11px !important;
+  font-weight: 600;
+}
+
+html[data-nuxrad-pro="on"] .nxpro-bottom [role="tab"][aria-selected="true"],
+html[data-nuxrad-pro="on"] .nxpro-bottom [role="tab"][data-state="active"] {
+  color: #a5ecfa !important;
+  background-color: #1b3d52 !important;
+  box-shadow: inset 0 -2px #64d8ee;
+}
+
+html[data-nuxrad-pro="on"] .nxpro-timeline {
+  background-color: #101c2be8 !important;
+  border: 1px solid #3a536c !important;
+  border-radius: 10px !important;
+  box-shadow: 0 4px 18px #0005;
+  padding: 7px 9px !important;
+  font-variant-numeric: tabular-nums;
+  backdrop-filter: blur(10px);
+}
+
+html[data-nuxrad-pro="on"] [role="dialog"][data-slot="content"],
+html[data-nuxrad-pro="on"] [role="menu"],
+html[data-nuxrad-pro="on"] [role="listbox"] {
+  color: var(--ui-text);
+  background-color: #162233 !important;
+  border: 1px solid #425870 !important;
+  border-radius: 12px !important;
+  box-shadow: 0 16px 52px #0008;
+}
+
+html[data-nuxrad-pro="on"] [role="dialog"] [data-slot="header"] {
+  background: #1b2b3f;
+  border-bottom: 1px solid #3a4e65;
+}
+
+html[data-nuxrad-pro="on"] [role="menuitem"],
+html[data-nuxrad-pro="on"] [role="option"] {
+  font-family: var(--font-sans);
+  line-height: 1.45;
+  border-radius: 6px;
+}
+
+html[data-nuxrad-pro="on"] [role="menuitem"][data-highlighted],
+html[data-nuxrad-pro="on"] [role="option"][data-highlighted] {
+  color: #e9faff !important;
+  background-color: #28465d !important;
+}
+
+html[data-nuxrad-pro="on"] input:not([type="range"]):not([type="color"]):not([type="checkbox"]):not([type="radio"]):not([type="hidden"]),
+html[data-nuxrad-pro="on"] textarea,
+html[data-nuxrad-pro="on"] select {
+  font-family: var(--font-sans);
+  color: #e4eef8;
+  background-color: #0d1826;
+  border-color: #3c536b;
+  border-radius: 7px;
+}
+
+html[data-nuxrad-pro="on"] input::placeholder,
+html[data-nuxrad-pro="on"] textarea::placeholder {
+  color: #95abc2;
+}
+
+html[data-nuxrad-pro="on"] button:focus-visible,
+html[data-nuxrad-pro="on"] input:focus-visible,
+html[data-nuxrad-pro="on"] textarea:focus-visible,
+html[data-nuxrad-pro="on"] select:focus-visible,
+html[data-nuxrad-pro="on"] a:focus-visible,
+html[data-nuxrad-pro="on"] [role="tab"]:focus-visible {
+  outline: 2px solid #7fe4f7 !important;
+  outline-offset: 2px;
+}
+
+html[data-nuxrad-pro="on"] table {
+  font-variant-numeric: tabular-nums;
+}
+
+html[data-nuxrad-pro="on"] th {
+  color: #b1c8df;
+  font-size: 11px;
+  font-weight: 650;
+  letter-spacing: .025em;
+}
+
+html[data-nuxrad-pro="on"] td {
+  border-color: #2a3d52;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html[data-nuxrad-pro="on"] .nxpro-rail button {
+    transition: none;
+  }
+}

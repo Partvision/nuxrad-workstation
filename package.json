@@ -1,0 +1,13 @@
+{
+  "name": "nuxrad-workstation",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Independent NUXRAD interface themes, radar palettes, and bundled plugins",
+  "type": "module",
+  "engines": { "node": ">=24" },
+  "scripts": {
+    "start": "node launcher.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "build:themes": "node scripts/build-theme-packages.mjs"
+  }
+}

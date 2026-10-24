@@ -1,0 +1,17 @@
+; High Contrast — NUXRAD theme bundle
+Product: BR
+Units: dBZ
+Scale: 1
+Offset: 0
+
+Color4: -20 0 0 0 0
+Color4: 0 70 90 110 45
+Color4: 15 70 130 150 160
+Color4: 20 0 255 100 255
+Color4: 30 0 150 50 255
+Color4: 35 255 255 0 255
+Color4: 45 255 130 0 255
+Color4: 50 255 35 35 255
+Color4: 60 255 0 220 255
+Color4: 70 255 255 255 255
+Color4: 80 80 215 255 255

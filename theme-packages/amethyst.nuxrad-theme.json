@@ -1,0 +1,199 @@
+{
+  "format": "nuxrad-jss-theme/v1",
+  "id": "amethyst",
+  "name": "Amethyst",
+  "version": "2.0.0",
+  "colors": [
+    "#110e1b",
+    "#1e182f",
+    "#2c2441",
+    "#4b3d64",
+    "#beabff",
+    "#ede6ff",
+    "#b8a8d1"
+  ],
+  "profile": {
+    "rail": 88,
+    "header": 68,
+    "radius": 18,
+    "control": 48,
+    "font": "\"Segoe UI Variable Display\",\"Segoe UI\",sans-serif",
+    "label": "Floating icon dock",
+    "surface": "glass",
+    "weight": 550
+  },
+  "settings": {
+    "scale": 100,
+    "density": "theme",
+    "corners": "theme",
+    "navigation": "theme",
+    "font": "theme",
+    "motion": "system",
+    "contrast": "normal",
+    "reflectivityPalette": "keep",
+    "velocityPalette": "keep"
+  },
+  "jss": {
+    "&": {
+      "--ui-header-height": "68px",
+      "--ui-radius": "9px",
+      "--radius-control": "18px",
+      "--font-sans": "\"Segoe UI Variable Display\",\"Segoe UI\",sans-serif",
+      "--nxpro-rail-width": "88px",
+      "fontSize": 14
+    },
+    "& body, & #__nuxt": {
+      "fontFamily": "\"Segoe UI Variable Display\",\"Segoe UI\",sans-serif"
+    },
+    "& [data-app-navbar]": {
+      "borderBottom": "1px solid var(--nxpro-line)",
+      "boxShadow": "0 3px 16px #0002",
+      "background": "color-mix(in srgb,var(--nxpro-panel) 90%,transparent)",
+      "backdropFilter": "blur(16px)"
+    },
+    "& [data-app-navbar] [data-slot=\"root\"]": {
+      "minHeight": 68
+    },
+    "& #dashboard-sidebar-toolbox[data-collapsed=\"true\"]": {
+      "width": 88,
+      "minWidth": 88
+    },
+    "& .nxpro-rail": {
+      "width": 88,
+      "minWidth": 88,
+      "maxWidth": 88,
+      "padding": "16px 6px 12px",
+      "gap": 5,
+      "borderRight": "1px solid var(--nxpro-line)",
+      "background": "var(--nxpro-panel)"
+    },
+    "& .nxpro-rail button": {
+      "width": 76,
+      "minWidth": 76,
+      "minHeight": 48,
+      "borderRadius": 18,
+      "fontFamily": "\"Segoe UI Variable Display\",\"Segoe UI\",sans-serif",
+      "fontWeight": 550,
+      "flexDirection": "column",
+      "justifyContent": "center",
+      "gap": 5,
+      "padding": "7px 4px",
+      "fontSize": 10
+    },
+    "& .nxpro-rail button [class*=\"text-\"]": {
+      "fontFamily": "\"Segoe UI Variable Display\",\"Segoe UI\",sans-serif",
+      "fontSize": 9.5,
+      "lineHeight": 1.3
+    },
+    "& .nxpro-rail::before": {
+      "content": "\"TOOLS\"",
+      "fontFamily": "\"Segoe UI Variable Display\",\"Segoe UI\",sans-serif",
+      "fontSize": 9,
+      "padding": "0 0 8px",
+      "letterSpacing": ".12em"
+    },
+    "& .nxpro-rail .nxm-entry-label": {
+      "fontSize": 7,
+      "padding": "0 0 10px",
+      "textAlign": "center"
+    },
+    "& .nxpro-rail .nxm-entry-button": {
+      "flexDirection": "column"
+    },
+    "& .nxpro-rail .nxm-entry-button span": {
+      "fontSize": 9
+    },
+    "& .nxpro-right-rail button": {
+      "borderRadius": 18,
+      "minHeight": 54,
+      "fontFamily": "\"Segoe UI Variable Display\",\"Segoe UI\",sans-serif"
+    },
+    "& #dashboard-panel-home": {
+      "padding": "14px 14px 12px"
+    },
+    "& #dashboard-panel-home > [data-slot=\"body\"]": {
+      "borderRadius": 20,
+      "boxShadow": "0 0 0 1px var(--nxpro-line),0 10px 32px #0005"
+    },
+    "& .nxpro-pane-label": {
+      "borderRadius": 18,
+      "fontFamily": "\"Segoe UI Variable Display\",\"Segoe UI\",sans-serif",
+      "fontSize": 12,
+      "minHeight": 38,
+      "boxShadow": "0 10px 32px #0005",
+      "border": "1px solid var(--nxpro-line)",
+      "letterSpacing": ".01em"
+    },
+    "& .nxpro-timeline": {
+      "borderRadius": 18,
+      "padding": "9px 12px",
+      "fontFamily": "\"Segoe UI Variable Display\",\"Segoe UI\",sans-serif",
+      "boxShadow": "0 10px 32px #0005",
+      "backdropFilter": "blur(14px)"
+    },
+    "& [data-app-navbar] button, & [data-slot=\"header\"] button": {
+      "borderRadius": 18,
+      "fontFamily": "\"Segoe UI Variable Display\",\"Segoe UI\",sans-serif"
+    },
+    "& [data-slot=\"title\"]": {
+      "fontFamily": "\"Segoe UI Variable Display\",\"Segoe UI\",sans-serif",
+      "fontWeight": 550,
+      "letterSpacing": "-.01em"
+    },
+    "& [role=\"dialog\"][data-slot=\"content\"], & [role=\"menu\"], & [role=\"listbox\"]": {
+      "borderRadius": 20,
+      "border": "1px solid var(--nxpro-line)",
+      "boxShadow": "0 10px 32px #0005",
+      "fontFamily": "\"Segoe UI Variable Display\",\"Segoe UI\",sans-serif"
+    },
+    "& input:not([type=\"range\"]):not([type=\"checkbox\"]):not([type=\"radio\"]), & select, & textarea": {
+      "borderRadius": 18,
+      "fontFamily": "\"Segoe UI Variable Display\",\"Segoe UI\",sans-serif"
+    },
+    "& .nxm-dialog, & .nxm-card, & .nxm-notes": {
+      "borderRadius": 22,
+      "fontFamily": "\"Segoe UI Variable Display\",\"Segoe UI\",sans-serif"
+    },
+    "& .nxm-button, & .nxm-filter, & .nxm-search, & .nxm-dock-button": {
+      "borderRadius": 18,
+      "fontFamily": "\"Segoe UI Variable Display\",\"Segoe UI\",sans-serif"
+    },
+    "& .nxm-dialog": {
+      "left": 100,
+      "top": 84
+    },
+    "@media (max-width: 1000px)": {
+      "& #dashboard-sidebar-toolbox[data-collapsed=\"true\"], & .nxpro-rail": {
+        "width": 76,
+        "minWidth": 76,
+        "maxWidth": 76
+      },
+      "& .nxpro-rail": {
+        "padding": "12px 6px"
+      },
+      "& .nxpro-rail button": {
+        "width": 64,
+        "minWidth": 64,
+        "flexDirection": "column",
+        "justifyContent": "center",
+        "gap": 4
+      },
+      "& .nxpro-rail button [class*=\"text-\"]": {
+        "fontSize": 10
+      },
+      "& .nxm-dialog": {
+        "left": 88
+      }
+    },
+    "@media (max-width: 750px)": {
+      "& .nxm-dialog": {
+        "left": 12,
+        "top": 15
+      }
+    }
+  },
+  "palettes": {
+    "BR": "; Teal & Amber — NUXRAD theme bundle\nProduct: BR\nUnits: dBZ\nScale: 1\nOffset: 0\n\nColor4: -20 0 0 0 0\nColor4: 0 70 85 100 45\nColor4: 10 65 115 155 130\nColor4: 20 20 155 190 255\nColor4: 30 70 205 205 255\nColor4: 35 230 220 120 255\nColor4: 45 255 170 50 255\nColor4: 50 230 95 35 255\nColor4: 60 180 55 135 255\nColor4: 70 235 200 245 255\nColor4: 80 255 255 255 255\n",
+    "BV": "; Teal & Amber — NUXRAD theme bundle\nProduct: BV\nUnits: m/s\nScale: 1\nOffset: 0\n\nColor4: -64 180 255 255 255\nColor4: -40 30 205 220 255\nColor4: -20 0 125 155 255\nColor4: -5 70 100 115 255\nColor4: 0 170 175 180 255\nColor4: 5 125 100 65 255\nColor4: 20 220 145 30 255\nColor4: 40 255 195 65 255\nColor4: 64 255 245 180 255\n"
+  }
+}
